@@ -36,13 +36,8 @@
 ;         -> double ( double ( 1 * 2 ) ) -> double ( double ( 2 ) ) -> double ( 4 ) -> 8 | steps = 2
 ;   ...
 
-; Iterative implementation
-(define (* a b)
-  (cond ((= 1 a) b)
-        ((even? a) (* (halve a) (double b)))
-        (else (+ a (* (- a 1) b)))))
-
 (* 2 2)
 (* 2 4)
 (* 4 4)
 (* 8 3)
+
